@@ -1,0 +1,7 @@
+git add [] : to add to the project 
+git commit -m "Message" : to commmit
+git checkout -b [] : to create a branch 
+git push -u origin master: to push to the master branch 
+git remote add origin URL to add URL to use for pushing
+git pull origin master : to pull
+
