@@ -17,7 +17,7 @@ def base64Decoder(encoded_data):
     print("Decoded Message: \n", str(standard_b64decode(encoded_data)))
 
 # input data
-data = input(">>: ").encode()
+data = input("Input message to encrypt >>: ").encode()
 # base64
 encoded_data = base64Encode(data)
 base64Decoder(encoded_data)
