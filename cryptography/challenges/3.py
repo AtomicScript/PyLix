@@ -26,14 +26,12 @@ def bruteOneDigitKey(cipher):
 
 # 70155d5c45415d5011585446424c
 def bruteTwoDigitKey():
+    # WORK ON IT LATER
     hex_cipher = input('>>: ').decode('hex')
     print(t)
     n = 2
     # stackoverflow
     # new_hex_cipher = [hex_cipher[i:i+n] for i in range(0, len(hex_cipher), n)]
-
-
-
     # print(ord(str(i)))
     # text += str(ord(str(i)))
 
@@ -42,10 +40,10 @@ def bruteTwoDigitKey():
 
 example_cipher = 'snw{fzs'
 ex_k = '6'
-# example = xorDecryption(example_cipher, ex_k)
-# print(f'Plaintext = {example}')
+example = xorDecryption(example_cipher, ex_k)
+print(f'Plaintext = {example}')
 
 # lets make brute furcing the key but numbers?
-# ciphertext = 'khoor'
-# bruteOneDigitKey(ciphertext)
+ciphertext = 'khoor'
+bruteOneDigitKey(ciphertext)
 bruteTwoDigitKey()
