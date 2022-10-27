@@ -24,16 +24,20 @@ def bruteOneDigitKey(cipher):
             plaintext += str(chr(x))
         print(f'{k} : {plaintext}')
 
-# 70155d5c45415d5011585446424c
+
+# will come back to it later
 def bruteTwoDigitKey():
-    # WORK ON IT LATER
-    hex_cipher = input('>>: ').decode('hex')
-    print(t)
-    n = 2
-    # stackoverflow
-    # new_hex_cipher = [hex_cipher[i:i+n] for i in range(0, len(hex_cipher), n)]
-    # print(ord(str(i)))
-    # text += str(ord(str(i)))
+    hex_cipher = '70155d5c45415d5011585446424c'
+    byte_array = bytearray.fromhex(hex_cipher)
+    cipher = byte_array.decode('ascii')
+    n = len(cipher)
+    # key is two digit so
+    for x in '0123456789':
+        for y in '0123456789':
+            key = x + y
+            plaintext = ''
+            print(ord(str(key)))
+
 
 
 
