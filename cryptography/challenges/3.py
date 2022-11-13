@@ -39,9 +39,6 @@ def bruteTwoDigitKey():
             print(ord(str(key)))
 
 
-
-
-
 example_cipher = 'snw{fzs'
 ex_k = '6'
 example = xorDecryption(example_cipher, ex_k)
