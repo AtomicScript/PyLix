@@ -23,7 +23,7 @@ def calSyn(tgt):
             preNum = preNum
         pkt = IP(dst=tgt) / TCP()
         print("[+] Sent a packet")
-        ans = sr1(pkt,verbose=0, timeout=2)
+        ans = sr1(pkt)
         print("[+] SR1")
         seqNum=ans.getlayer(TCP).seq
         print("[+] Getting a sequence Number")
@@ -34,6 +34,6 @@ def calSyn(tgt):
 
 
 src = '10.10.10.10'
-tgt='192.168.0.20'
+tgt='8.8.8.8'
 x=calSyn(tgt)
 print(f"[+] Next TCP Sequence Number to ACK is {str(x)}")
