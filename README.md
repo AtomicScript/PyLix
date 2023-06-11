@@ -14,7 +14,7 @@ The below are the books related to Python and cybersecurity that I have found an
 
 ## Projects
 - [ ] Encrypting - Decrypting Files
-- [x] [Hashing Files]('cryptography/Hashing/hashingFiles.py')
+- [x] Hashing Files
 - [ ] Port Scanner
 - [ ] Vulnerability Scanner
 - [ ] Automated OISNTS 
